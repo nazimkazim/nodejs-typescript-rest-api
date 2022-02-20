@@ -3,12 +3,12 @@ import bcrypt from 'bcrypt'
 import config from 'config'
 
 export interface UserDocument extends mongoose.Document {
-  email: string,
-  name: string,
-  password: string,
-  createdAt: Date,
-  updatedAt: Date
-  comparePassword(candidatePassword: string): Promise<Boolean>
+  email: string;
+  name: string;
+  password: string;
+  createdAt: Date;
+  updatedAt: Date;
+  comparePassword(candidatePassword: string): Promise<Boolean>;
 }
 
 const userSchema = new mongoose.Schema({
