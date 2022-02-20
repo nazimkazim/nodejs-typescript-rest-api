@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 import { UserDocument } from './user.model'
-import { string } from 'zod';
 
 export interface SchemaDocument extends mongoose.Document {
   user: UserDocument['_id'];
